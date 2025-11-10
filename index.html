@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog Mateo Carcelen</title>
+    <link rel="stylesheet" href="estilo.css">
 </head>
 
 <body>
+    <!-- NAVBAR -->
     <nav>
         <ul>
             <li><a href="#">Inicio</a></li>
@@ -17,28 +18,34 @@
             <li><a href="contacto.html">Contactos</a></li>
         </ul>
     </nav>
-    <main> Inicio </main>
-    <h1>Hola, soy Mateo</h1>
-    <p>Bienvenido a mi sitio personal. Aquí comparto mi vida, aspectos académicos, mis hobbies y los proyectos que estoy
-        desarrollando como estudiante de negocios digitales.</p>
 
-    <section>
-        <section id="ultimos-proyectos">
-            <article>
+    <!-- SECCIÓN DE BIENVENIDA -->
+    <header class="cabecera-principal">
+        <h1>Hola, soy Mateo </h1>
+        <p>Bienvenido a mi blog personal. Aquí comparto mi vida, mis aprendizajes como estudiante de negocios digitales y mi pasión por el deporte y la innovación.</p>
+    </header>
 
-                <h1>Mi Galería</h1>
-                <div class="galeria">
-                    <div class="fila">
-                        <img src="img/344x230 Foto1.png" alt="Foto 1">
-                        <img src="img/3344x230 Foto 2.png" alt="Foto 2">
-                        <img src="img/344x230 Foto 3.png" alt="Foto 3">
-                    </div>
-                    <h1>Mis ultimos viajes</h1>
-                    <img src="img/220-360 Viaje .png"> <img src="img/220-360 Viaje 2.png">
-                    <button>Explorar</button>
+    <!-- SECCIONES PRINCIPALES -->
+    <section class="paneles">
+        <!-- PANEL 1 -->
+        <div class="panel">
+            <h2>📸 Mi Galería</h2>
+            <div class="galeria">
+                <img src="img/344x230 Foto1.png" alt="Foto 1">
+                <img src="img/3344x230 Foto 2.png" alt="Foto 2">
+                <img src="img/344x230 Foto 3.png" alt="Foto 3">
+            </div>
+        </div>
 
-            </article>
-        </section>
+        <!-- PANEL 2 -->
+        <div class="panel">
+            <h2>🌍 Mis últimos viajes</h2>
+            <div class="galeria">
+                <img src="img/220-360 Viaje .png" alt="Viaje 1">
+                <img src="img/220-360 Viaje 2.png" alt="Viaje 2">
+            </div>
+            <button>Explorar</button>
+        </div>
+    </section>
 </body>
-
 </html>

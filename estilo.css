@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+/* --- ESTILO GENERAL --- */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    background-color: #f7f8fa;
+    color: #222;
+    line-height: 1.6;
+}
+
+/* --- CABECERA / NAVBAR --- */
+nav {
+    background-color: #FF2936; /* Rojo principal */
+    padding: 10px 0;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    width: 100%;
+    position: relative; /* No fijo */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    flex-wrap: wrap;
+}
+
+nav li {
+    margin: 0 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    transition: opacity 0.3s ease;
+}
+
+nav a:hover {
+    opacity: 0.8;
+}
+
+/* --- CONTENIDO PRINCIPAL --- */
+main {
+    text-align: center;
+    padding: 60px 20px;
+    max-width: 900px;
+    margin: auto;
+}
+
+main h1 {
+    font-size: 2.5em;
+    color: #0d1b2a;
+    margin-bottom: 10px;
+}
+
+main p {
+    color: #444;
+    font-size: 1.1em;
+}
+
+/* --- GALERÍA --- */
+#ultimos-proyectos {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+#ultimos-proyectos h1 {
+    color: #0d1b2a;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.fila {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.fila img {
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+    object-fit: cover;
+}
+
+.fila img:hover {
+    transform: scale(1.05);
+}
+
+/* --- BOTÓN --- */
+button {
+    background-color: #00b4d8;
+    border: none;
+    color: white;
+    padding: 12px 25px;
+    font-size: 1em;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0077b6;
+}
+
+/* --- RESPONSIVE DESIGN --- */
+
+/* Tablets */
+@media (max-width: 992px) {
+    main {
+        padding: 40px 15px;
+    }
+
+    .fila img {
+        width: 250px;
+    }
+}
+
+/* Teléfonos */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+        background-color: #FF2936; /* mantiene el rojo */
+    }
+
+    nav li {
+        margin: 10px 0;
+    }
+
+    nav a {
+        display: block;
+        width: 100%;
+        padding: 12px 0;
+        border-bottom: 1px solid rgba(255,255,255,0.2);
+    }
+
+    nav a:hover {
+        background-color: #e31b2b;
+        opacity: 1;
+    }
+
+    main h1 {
+        font-size: 2em;
+    }
+
+    main p {
+        font-size: 1em;
+        padding: 0 10px;
+    }
+
+    .fila img {
+        width: 90%;
+        max-width: 320px;
+    }
+}
+
+/* Pantallas muy pequeñas */
+@media (max-width: 480px) {
+    nav a {
+        font-size: 0.9em;
+        padding: 10px 0;
+    }
+
+    main h1 {
+        font-size: 1.7em;
+    }
+
+    button {
+        width: 80%;
+        font-size: 0.95em;
+    }
+}
+
+
+
