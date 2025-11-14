@@ -3,32 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog Mateo Carcelen Estudios </title>
-        <link rel="stylesheet" href="estilo.css">
-
-
+    <title>Estudios – Blog Mateo Carcelen</title>
+    <link rel="stylesheet" href="estilo.css">
 </head>
+
 <body>
+
+    <!-- NAVBAR -->
     <nav>
-        <ul>
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="#">Estudios</a></li>
-            <li><a href="hobbies.html">Hobbies</a></li>
-            <li><a href="proyectos.html">Proyectos</a></li>
-            <li><a href="contacto.html">Contactos</a></li>
-        </ul>
+        <div class="nav-container">
+            <img src="img/MTC logo-03.png" class="logo" alt="Logo del Blog">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a class="activo" href="estudios.html">Estudios</a></li>
+                <li><a href="hobbies.html">Hobbies</a></li>
+                <li><a href="proyectos.html">Proyectos</a></li>
+                <li><a href="contacto.html">Contactos</a></li>
+            </ul>
+        </div>
     </nav>
-        <h1>Estudios</h1>
 
-    <h1>Formación Académica</h1>
-<p>Actualmente estudio la carrera de Negocios Digitales, enfocada en marketing, innovación y tecnologia</p>
+    <!-- CABECERA -->
+    <header class="cabecera-seccion">
+        <h1>Dónde estudié</h1>
+        <p class="texto-intro">
+            Estos son los lugares donde me he podido desarrollar para ser la persona que soy hoy en día.
+        </p>
+    </header>
 
-    <h2>Materias Destacadas</h2>
-<ul>
-  <li>Marketing Digital</li>
-  <li>Transformación Digital</li>
-</ul>
-    <h3>Proyecto de Transformación digital</h3>
+    <main class="contenido-pagina">
+
+        <!-- PANEL COLEGIO -->
+        <section class="panel-estudio">
+            <img src="img/colegio 1.jpg" alt="Compañeros del colegio" class="foto-estudio">
+            <div class="texto-estudio">
+                <h2>Colegio – Liceo del Valle</h2>
+                <p>
+                    Cursé mi primaria y secundaria en el <strong>Liceo del Valle</strong>, un lugar donde formé grandes 
+                    amistades y viví experiencias que marcaron mi crecimiento personal y académico.
+                </p>
+            </div>
+        </section>
+
+        <!-- PANEL UNIVERSIDAD -->
+        <section class="panel-estudio">
+            <img src="img/universidad 1.jpeg" alt="Compañeros de la universidad" class="foto-estudio">
+            <div class="texto-estudio">
+                <h2>Universidad – Universidad Politécnica Salesiana</h2>
+                <p>
+                    Actualmente estudio <strong>Negocios Digitales</strong> en la Universidad Salesiana en Quito.  
+                    Aquí he aprendido, crecido y compartido grandes momentos con mis compañeros.
+                </p>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2025 Blog Mateo Carcelen | Inspirado en el deporte, la innovación y el crecimiento personal.</p>
+        <p>Sígueme en redes sociales:
+            <a href="https://www.instagram.com/mateojasssiel/">Instagram</a> |
+            <a href="https://wa.link/1b8ioa">Whatsapp</a>
+        </p>
+    </footer>
 
 </body>
 </html>

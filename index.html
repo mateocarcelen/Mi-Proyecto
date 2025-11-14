@@ -5,47 +5,163 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog Mateo Carcelen</title>
     <link rel="stylesheet" href="estilo.css">
+    <style>
+        /* --- GALERÍA RESPONSIVE --- */
+        .galeria-fija {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .galeria-fija img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+
+        .galeria-fija img:hover {
+            transform: scale(1.05);
+        }
+
+        h3 {
+            text-align: center;
+            margin: 40px 0 20px 0;
+            font-size: 1.8rem;
+            color: #333;
+        }
+
+        .panel-ultimas-fotos {
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 30px auto;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            max-width: 1200px;
+        }
+
+        .panel-ultimas-fotos h4 {
+            margin-bottom: 15px;
+            color: #555;
+        }
+
+        .ultimas-fotos {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 10px;
+        }
+
+        .ultimas-fotos img {
+            width: 100%;
+            border-radius: 8px;
+            object-fit: cover;
+        }
+
+        @media (max-width: 600px) {
+            h3 {
+                font-size: 1.4rem;
+            }
+        }
+    </style>
 </head>
 
 <body>
     <!-- NAVBAR -->
     <nav>
-        <ul>
-            <li><a href="#">Inicio</a></li>
-            <li><a href="estudios.html">Estudios</a></li>
-            <li><a href="hobbies.html">Hobbies</a></li>
-            <li><a href="proyectos.html">Proyectos</a></li>
-            <li><a href="contacto.html">Contactos</a></li>
-        </ul>
+        <div class="nav-container">
+            <img src="img/MTC logo-03.png" alt="Logo del Blog" class="logo">
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="estudios.html">Estudios</a></li>
+                <li><a href="hobbies.html">Hobbies</a></li>
+                <li><a href="proyectos.html">Proyectos</a></li>
+                <li><a href="contacto.html">Contactos</a></li>
+            </ul>
+        </div>
     </nav>
 
-    <!-- SECCIÓN DE BIENVENIDA -->
-    <header class="cabecera-principal">
-        <h1>Hola, soy Mateo </h1>
-        <p>Bienvenido a mi blog personal. Aquí comparto mi vida, mis aprendizajes como estudiante de negocios digitales y mi pasión por el deporte y la innovación.</p>
-    </header>
+<!-- SECCIÓN DE BIENVENIDA CON VIDEO DE FONDO -->
+<header class="cabecera-principal">
+    <video autoplay muted loop class="video-fondo">
+        <source src="video/fondo.mp4" type="video/mp4">
+    </video>
 
-    <!-- SECCIONES PRINCIPALES -->
-    <section class="paneles">
-        <!-- PANEL 1 -->
-        <div class="panel">
-            <h2>📸 Mi Galería</h2>
-            <div class="galeria">
-                <img src="img/344x230 Foto1.png" alt="Foto 1">
-                <img src="img/3344x230 Foto 2.png" alt="Foto 2">
-                <img src="img/344x230 Foto 3.png" alt="Foto 3">
-            </div>
-        </div>
+    <div class="contenido-bienvenida">
+        <h1>Hola, soy Mateo</h1>
+        <p>Bienvenido a mi blog personal. Aquí comparto mi vida, mis aprendizajes como un estudiante de negocios digitales y mi pasión por el deporte y la innovación.</p>
+    </div>
+</header>
 
-        <!-- PANEL 2 -->
-        <div class="panel">
-            <h2>🌍 Mis últimos viajes</h2>
-            <div class="galeria">
-                <img src="img/220-360 Viaje .png" alt="Viaje 1">
-                <img src="img/220-360 Viaje 2.png" alt="Viaje 2">
-            </div>
-            <button>Explorar</button>
-        </div>
+
+    <!-- GALERÍA FIJA -->
+    <section class="galeria-fija">
+        <img src="img/344x230 Foto1.png" alt="Persona 1">
+        <img src="img/3344x230 Foto 2.png" alt="Persona 2">
+        <img src="img/344x230 Foto 3.png" alt="Persona 3">
+        <img src="img/344x220 Foto 4.png" alt="Persona 4">
     </section>
+
+    <!-- TÍTULO CENTRAL -->
+    <h3>A continuación te cuento un poco más de mi .....</h3>
+<p style="text-align:center; max-width:700px; margin:0 auto;">
+    Soy una persona apasionada por el deporte y la tecnología. Me encanta mantenerme activo, descubrir cómo la innovación transforma nuestro día a día y explorar herramientas digitales que potencian mi crecimiento. Siempre busco aprender algo nuevo, experimentar con ideas frescas y mantenerme en constante evolución, porque creo que el conocimiento se construye paso a paso y nunca se detiene.
+</p>
+
+
+   <!-- PANEL SELECCIÓN 2x2 -->
+<section class="panel panel-grid">
+    <h2>Explora mi Blog</h2>
+
+    <div class="grid-opciones">
+
+        <!-- ESTUDIOS -->
+        <div class="opcion">
+            <img src="img/344x220 - menu 1.png" alt="Estudios">
+            <h3>Estudios</h3>
+            <p>Mi recorrido académico, proyectos y aprendizajes.</p>
+            <a href="estudios.html" class="btn-opcion">Ir a Estudios</a>
+        </div>
+
+        <!-- HOBBIES -->
+        <div class="opcion">
+            <img src="img/344x220 - menu 2.png" alt="Hobbies">
+            <h3>Hobbies</h3>
+            <p>Actividades que disfruto en mi vida diaria.</p>
+            <a href="hobbies.html" class="btn-opcion">Ver Hobbies</a>
+        </div>
+
+        <!-- PROYECTOS -->
+        <div class="opcion">
+            <img src="img/344x220 - menu 3.png" alt="Proyectos">
+            <h3>Proyectos</h3>
+            <p>Mis ideas, trabajos digitales y creaciones.</p>
+            <a href="proyectos.html" class="btn-opcion">Ver Proyectos</a>
+        </div>
+
+        <!-- CONTACTOS -->
+        <div class="opcion">
+            <img src="img/344x220 - menu 4.png" alt="Contactos">
+            <h3>Contactos</h3>
+            <p>Comunícate conmigo para colaborar o conversar.</p>
+            <a href="contacto.html" class="btn-opcion">Ir a Contacto</a>
+        </div>
+
+    </div>
+</section>
+
+
+
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2025 Blog Mateo Carcelen | Inspirado en el deporte, la innovación y el crecimiento personal.</p>
+        <p>Sígueme en redes sociales:
+            <a href="https://www.instagram.com/mateojasssiel/">Instagram</a> |
+            <a href="https://wa.link/1b8ioa">Whatsapp</a>
+        </p>
+    </footer>
+
 </body>
 </html>

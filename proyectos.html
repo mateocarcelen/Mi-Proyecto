@@ -1,65 +1,81 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog Mateo Carcelen Proyectos </title>
+    <title>Proyectos – Blog Mateo Carcelen</title>
     <link rel="stylesheet" href="estilo.css">
-
-    
 </head>
 
 <body>
+
+    <!-- NAVBAR -->
     <nav>
-        <ul>
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="estudios.html">Estudios</a></li>
-            <li><a href="hobbies.html">Hobbies</a></li>
-            <li><a href="#">Proyectos</a></li>
-            <li><a href="contacto.html">Contactos</a></li>
-        </ul>
+        <div class="nav-container">
+            <img src="img/MTC logo-03.png" class="logo" alt="Logo del Blog">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="estudios.html">Estudios</a></li>
+                <li><a href="hobbies.html">Hobbies</a></li>
+                <li><a class="activo" href="proyectos.html">Proyectos</a></li>
+                <li><a href="contacto.html">Contactos</a></li>
+            </ul>
+        </div>
     </nav>
-    <main>
-        <h1>Proyectos</h1>
-        <article>
-            <h4>Tyche Plataforma de recompensas</h4>
-            <img src="img/Tyche 335x224.png">
-            <p>
-                <strong>Tyche</strong> es un sistema de recompensas diseñado para estudiantes universitarios:
-                premia la participación y el compromiso en actividades extracurriculares propuestas por profesores y la
-                universidad.
-            </p>
 
-            <p>
-                Los estudiantes ganan puntos al completar tareas, asistir a talleres, participar en proyectos
-                o colaborar en iniciativas comunitarias registradas en la plataforma.
-            </p>
+    <!-- CABECERA -->
+    <header class="cabecera-seccion">
+        <h1>Mis Proyectos</h1>
+        <p>Aquí encontrarás los trabajos más importantes que he desarrollado en la carrera de Negocios digitales de diferentes asignaturas a lo largo de estos sem.</p>
+    </header>
 
+    <main class="contenido-pagina">
+
+        <!-- PROYECTO 1 -->
+        <article class="tarjeta-proyecto">
+            <h2>Tyche – Plataforma de Recompensas</h2>
+            <img src="img/Tyche 335x224.png" alt="Proyecto Tyche">
             <p>
-                Cada actividad tiene una puntuación asociada según su duración, impacto y nivel de responsabilidad.
-                Al acumular puntos, los estudiantes pueden canjearlos por productos propios
+                <strong>Tyche</strong> es una plataforma de recompensas diseñada para estudiantes universitarios.
+                Premia la participación en actividades extracurriculares asignando puntos que luego pueden ser
+                canjeados por productos.
             </p>
         </article>
 
-        <article>
-            <h4>Megamaxi Inmersion</h4>
-            <img src="img/Megamaxi 335x224 1.png"> <img src="img/Megamaxi 335x224 2.png">
-            <p>El Proyecto Megamaxi Inmersion fue un desarollo de un 
-                entorno digital replicando el Supermaxi
-                que lo realizamos en la materia de Realidad Aumentada 
-                donde fuimos desarollando poco a
-                poco el entorno en difenteres platafomas Spatial.io 
-                Skecth Up y finalmente lo desarollamos en Unity
+        <!-- PROYECTO 2 -->
+        <article class="tarjeta-proyecto">
+            <h2>Megamaxi Inmersion</h2>
+            <div class="imagenes-dobles">
+                <img src="img/Megamaxi 335x224 1.png" alt="MegaMaxi 1">
+                <img src="img/Megamaxi 335x224 2.png" alt="MegaMaxi 2">
+            </div>
+            <p>
+                Proyecto donde recreamos un Supermaxi digital utilizando Spatial, SketchUp y Unity. Fue desarrollado
+                en la materia de Realidad Aumentada, creando paso a paso un entorno inmersivo.
             </p>
         </article>
-        <article>
-            <h4>Proyecto Indutextma </h4>
-            <img src="img/Indutexma 335x224 1.png">
 
-            
+        <!-- PROYECTO 3 -->
+        <article class="tarjeta-proyecto">
+            <h2>Proyecto Indutexma</h2>
+            <img src="img/Indutexma 335x224 1.png" alt="Proyecto Indutexma">
+            <p>
+                Desarrollo académico sobre la empresa ecuatoriana Indutexma con análisis financiero, contable y una
+                propuesta de valor innovadora.
+            </p>
         </article>
+
     </main>
-</body>
 
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2025 Blog Mateo Carcelen | Inspirado en el deporte, la innovación y el crecimiento personal.</p>
+        <p>Sígueme en redes sociales:
+            <a href="https://www.instagram.com/mateojasssiel/">Instagram</a> |
+            <a href="https://wa.link/1b8ioa">Whatsapp</a>
+        </p>
+    </footer>
+
+
+</body>
 </html>

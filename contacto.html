@@ -1,34 +1,73 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog Mateo Carcelen Contacto </title>
+    <title>Contacto - Blog Mateo Carcelen</title>
     <link rel="stylesheet" href="estilo.css">
-
-
 </head>
+
 <body>
+
+
+    <!-- NAVBAR -->
     <nav>
-        <ul>
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="estudios.html">Estudios</a></li>
-            <li><a href="hobbies.html">Hobbies</a></li>
-            <li><a href="proyectos.html">Proyectos</a></li>
-            <li><a href="#">Contacto</a></li>
-        </ul>
+        <div class="nav-container">
+            <img src="img/MTC logo-03.png" class="logo" alt="Logo del Blog">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="estudios.html">Estudios</a></li>
+                <li><a href="hobbies.html">Hobbies</a></li>
+                <li><a href="proyectos.html">Proyectos</a></li>
+                <li><a href="activo">Contactos</a></li>
+            </ul>
+        </div>
     </nav>
-    <main> Contacto </main>
 
-    <h2>Datos de contacto</h2>
-<ul>
-  <li>Email: mateojassiel29@gmail.com</li>
-  <li>Instagram: @mateojasssiel</li>
-    <li>Celular de contacto: 0998214086</li>
+    <main class="contacto-contenedor">
+        <h1>Contacto</h1>
+        <p class="contacto-texto">
+            Para cualquier requerimiento, consulta o posible desarrollo que te gustaría realizar,
+            puedes comunicarte conmigo llenando el siguiente formulario.
+        </p>
 
-  <ul>
-    <h6>Carta de presentación</h6>
-      <img src="img/@mateojasssiel 360x260.png" >
+        <!-- CONTENEDOR IMAGEN + FORM -->
+        <div class="contacto-flex">
+
+            <div class="contacto-imagen">
+                <img src="img/@mateojasssiel 360x260.png" alt="Imagen contacto">
+            </div>
+
+            <div class="form-card">
+                <form action="#" method="POST">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Ingresa tu nombre" required>
+
+                    <label for="correo">Correo electrónico</label>
+                    <input type="email" id="correo" name="correo" placeholder="Ingresa tu correo" required>
+
+                    <button type="submit">Enviar</button>
+                                <a href="https://wa.link/1b8ioa">Whatsapp</a>
+
+                </form>
+            </div>
+
+        </div>
+
+    </main>
+
+    
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2025 Blog Mateo Carcelen | Inspirado en el deporte, la innovación y el crecimiento personal.</p>
+        <p>Sígueme en redes sociales:
+            <a href="https://www.instagram.com/mateojasssiel/">Instagram</a> |
+            <a href="https://wa.link/1b8ioa">Whatsapp</a>
+        </p>
+    </footer>
+
 
 </body>
+
 </html>
